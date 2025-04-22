@@ -1,0 +1,73 @@
+@tailwind utilities;
+
+@layer utilities {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  :root {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+h1 {
+  all: unset;
+}
+h2 {
+  all: unset;
+}
+p {
+  all: unset;
+}
+
+.spinner {
+  width: 18px;
+  height: 18px;
+  border: 3px solid transparent;
+  border-color: #FFFFFF29;
+  border-top-color: white;  
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Tailwind Styles */
+.label {
+  @apply overflow-hidden font-[500] text-[12px] leading-[16px] text-[#666C7B] mb-[4px] flex flex-col
+}
+.formfield {
+  @apply flex border-[1px] border-[#C7C9D1] px-[12px] py-[10px] rounded-[6px] shadow-[0_2px_4px_-2px_rgba(0,0,0,0.12)] 
+}
+
+.btn{
+  @apply bg-[#028837] text-[16px] font-[600] leading-[24px] text-center py-[12px] px-[16px] rounded-[6px] text-[white] transition-all duration-[80ms] active:translate-y-[4px] active:bg-[#02742F]
+}
+
+.flex-center {
+  @apply flex justify-center items-center;
+}
+
+.flex-start {
+  @apply flex justify-start items-start;
+}
+
+.flex-end {
+  @apply flex justify-end items-center;
+}
+
+.flex-between {
+  @apply flex justify-between items-center;
+}
