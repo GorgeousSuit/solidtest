@@ -48,7 +48,7 @@ const Payment = () => {
           ) : null}
           
           <div className="font-[400] text-[12px] text-[#666C7B] leading-[16px] py-[12px] px-[16px] border-[1px] border-[#E4E6EC] rounded-[8px]">
-            You'll have your{" "}
+            You&apos;ll have your{" "}
             <p className="font-[600]">Plan Pro during 1 year.</p> After this
             period of time, your plan will be{" "}
             <p className="font-[600]">automatically renewed</p> with its
