@@ -7,11 +7,9 @@ import Image from "@node_modules/next/image";
 import Divider from "../Divider";
 
 const Payment = () => {
-  const [success, setSuccess] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false);
 
   const handleSuccess = () => {
-    setSuccess(true);
     setTimeout(() => setShowSuccess(true), 2500);
   };
 
